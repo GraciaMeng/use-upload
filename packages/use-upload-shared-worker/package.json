@@ -1,6 +1,6 @@
 {
   "name": "use-upload-shared-worker",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "GraciaMeng",
   "license": "MIT",
   "main": "./dist/main.bundle.js",
