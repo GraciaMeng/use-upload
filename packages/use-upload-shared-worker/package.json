@@ -1,0 +1,56 @@
+{
+  "name": "use-upload-shared-worker",
+  "version": "0.0.0",
+  "author": "GraciaMeng",
+  "license": "MIT",
+  "main": "./dist/main.bundle.js",
+  "module": "./dist/main.bundle.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/**",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/main.bundle.js",
+      "require": "./dist/main.bundle.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GraciaMeng/use-upload.git",
+    "directory": "packages/use-upload-shared-worker"
+  },
+  "bugs": {
+    "url": "https://github.com/GraciaMeng/use-upload/issues"
+  },
+  "homepage": "https://github.com/GraciaMeng/use-upload/tree/main/packages/use-upload-shared-worker#readme",
+  "scripts": {
+    "build": "webpack --config webpack.config.js && pnpm patch-js",
+    "patch-js": "tsx ./script/inject.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "spark-md5": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-transform-typescript": "^7.24.6",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^18.15.3",
+    "@types/spark-md5": "^3.0.4",
+    "execa": "^9.1.0",
+    "ts-loader": "^9.5.1",
+    "tsx": "^4.11.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "worker-loader": "^3.0.8"
+  }
+}

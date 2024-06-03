@@ -1,0 +1,57 @@
+{
+  "name": "vue-use-upload",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vue hooks",
+    "upload"
+  ],
+  "author": "GraciaMeng",
+  "license": "MIT",
+  "main": "./dist/vue-use-upload.cjs.js",
+  "module": "./dist/vue-use-upload.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/**",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GraciaMeng/use-upload.git",
+    "directory": "packages/rc-use-upload"
+  },
+  "bugs": {
+    "url": "https://github.com/GraciaMeng/use-upload/issues"
+  },
+  "homepage": "https://github.com/GraciaMeng/use-upload/tree/main/packages/rc-use-upload#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext .ts --fix",
+    "prettier": "prettier --write ./**/*.{ts,md}"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@mengjx/eslint-config-vue": "^0.0.1",
+    "@types/node": "^18.15.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.2.12",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}
