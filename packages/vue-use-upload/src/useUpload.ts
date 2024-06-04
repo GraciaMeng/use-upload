@@ -168,7 +168,7 @@ export function useUpload(
   })
 
   // 开始上传
-  const startUpload = async (file: File) => {
+  const startUpload = (file: File) => {
     isAbort.value = false
     generate(file)
   }
